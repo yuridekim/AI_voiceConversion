@@ -2,7 +2,7 @@
 Deep generative model experiments
 1. Define your translation task of interest.
 2. Prepare training, validation, and test data.
-3. Build a deep generative model (e.g, GAN, VAE, …)
+3. Build a deep generative model (CycleVAE)
 4. Train the neural network and find the best hyper-parameters using training and validation data.
 5. Test the neural network using the test data.
 
