@@ -6,6 +6,8 @@ Deep generative model experiments
 4. Train the neural network and find the best hyper-parameters using training and validation data.
 5. Test the neural network using the test data.
 
+![result](/voiceConversion.png)
+
 # Description of the translation task
 I used Cycle VAE to implement a many-to-many voice conversion.   
 I changed A(female), B and C(male) to my voice(female).   
@@ -43,7 +45,7 @@ To find the optimal model, I adjusted the hyper parameters(learning rate, batch 
 After using the default parameters, I tried to minimze the batch size, maximize epochs, and adjusted learning rate around 0.001.   
 I deviated from these parameters depending on the previous results so that it would not be overfit/underfit.   
 Here are the 9 adjustments so that I could win the smallest validation error(reconstruction loss+cycle loss).   
-![result](/voiceConversion.png)
+![result](/result.png)
 
 1. learning rate: 0.0005, batch size:4, epoch: 1000(default)
 Validation의 Error: 2.2953
