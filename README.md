@@ -6,7 +6,10 @@ Deep generative model experiments
 4. Train the neural network and find the best hyper-parameters using training and validation data.
 5. Test the neural network using the test data.
 
-![result](/voiceConversion.png)
+<p align="center">
+ <img src="/voiceConversion.PNG">
+ </p>
+
 
 # Description of the translation task
 I used Cycle VAE to implement a many-to-many voice conversion.   
