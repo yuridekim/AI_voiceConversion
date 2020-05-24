@@ -25,12 +25,14 @@ To evaluated the model, I used a part of train data as my validation data using 
 Used model from [here](https://github.com/positivewon/AI_Homework_VC)
 
 # Description of the compiling, training, and testing procedures
-For learning the model, I used Google Colaboratory   
+For learning the model, I used Google Colaboratory.   
 First, we process our data for use with preprocess-eval, preprocess-train   
+
 For learning our models, we use train.py.   
 In CycleVAE, we use multiple decoders for better quality along with an encoder.   
 The encoder transforms the input into a latent vector which includes our language information. Then, it goes into the decoder along with the speaker identity so that it has the features of the target speaker.   
-To implement this, we utilize loss.py to calculate and minimize reconstruction loss, Kullback-Leibler divergence.     
+To implement this, we utilize loss.py to calculate and minimize reconstruction loss, Kullback-Leibler divergence.    
+
 Right after half the epoch, we start cycle training to calculate and minimze the cycle loss and updates our weights.   
 The epoch with the lowest validation set error will be chosen.
 
@@ -74,3 +76,5 @@ Output:
 *	From A to my voice: SF1_to_SF2
 *	From B to my voice: SM1_to_SF2
 *	From C to my voice: SM2_to_SF2
+
+# References
